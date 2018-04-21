@@ -19,6 +19,10 @@ var instance = flag.String("instance", "", "aws instance to generate new user-da
 
 func main() {
 	flag.Parse()
+	if *instance == "" {
+		flag.Usage()
+		os.Exit(1)
+	}
 	cfg, err := external.LoadDefaultAWSConfig()
 	if err != nil {
 		panic(err)
