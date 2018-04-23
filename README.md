@@ -13,6 +13,12 @@ will be prompted to type "y" if the changes seem ok.
 
 Once you accept the changes the userdata will be printed to stdout.
 
+## report all nodes
+
+```sh
+userdata -all
+```
+
 
 ## Notes
 If you see changes in etcd2 unit like dashes becoming underscores, don't worry. That's fine.
